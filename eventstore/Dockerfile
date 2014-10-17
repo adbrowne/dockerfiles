@@ -15,4 +15,4 @@ EXPOSE 1113
 VOLUME /data/db
 VOLUME /data/logs
 
-CMD cd /opt/EventStore-OSS-Linux-v3.0.0; ./run-node.sh --http-prefixes=http://*:2114/ --ext-ip=0.0.0.0
+CMD cd /opt/EventStore-OSS-Linux-v3.0.0; ./run-node.sh --http-prefixes=http://*:2114/ --ext-ip=0.0.0.0 --db /data/db --log /data/logs
