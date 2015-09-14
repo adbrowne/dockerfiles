@@ -6,8 +6,8 @@ FROM      ubuntu
 MAINTAINER Andrew Browne <brownie@brownie.com.au>
 
 ENV ES_VERSION 3.2.0
+ENV ES_VERSION 3.2.1
 
-RUN apt-get update && apt-get install -y curl
 RUN curl http://download.geteventstore.com/binaries/EventStore-OSS-Ubuntu-v$ES_VERSION.tar.gz | tar xz -C /opt
 
 EXPOSE 2113
