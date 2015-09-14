@@ -2,7 +2,7 @@
 #
 # VERSION               0.0.2
 
-FROM      ubuntu
+FROM      ubuntu:14.04.2
 MAINTAINER Andrew Browne <brownie@brownie.com.au>
 
 ENV ES_VERSION 3.2.1
