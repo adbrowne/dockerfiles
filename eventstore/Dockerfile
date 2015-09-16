@@ -2,13 +2,13 @@
 #
 # VERSION               0.0.2
 
-FROM      ubuntu
+FROM      ubuntu:14.04.2
 MAINTAINER Andrew Browne <brownie@brownie.com.au>
 
-ENV ES_VERSION 3.2.0
+ENV ES_VERSION 3.2.1
 
-RUN apt-get update && apt-get install -y curl
-RUN curl http://download.geteventstore.com/binaries/EventStore-OSS-Ubuntu-v$ES_VERSION.tar.gz | tar xz -C /opt
+ADD http://download.geteventstore.com/binaries/EventStore-OSS-Ubuntu-v$ES_VERSION.tar.gz /tmp/
+RUN tar xfz /tmp/EventStore-OSS-Ubuntu-v$ES_VERSION.tar.gz -C /opt
 
 EXPOSE 2113
 EXPOSE 1113
