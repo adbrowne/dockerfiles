@@ -5,7 +5,7 @@
 FROM      ubuntu:14.04.2
 MAINTAINER Andrew Browne <brownie@brownie.com.au>
 
-ENV ES_VERSION 3.2.1
+ENV ES_VERSION 3.3.1
 
 ADD http://download.geteventstore.com/binaries/EventStore-OSS-Ubuntu-v$ES_VERSION.tar.gz /tmp/
 RUN tar xfz /tmp/EventStore-OSS-Ubuntu-v$ES_VERSION.tar.gz -C /opt
