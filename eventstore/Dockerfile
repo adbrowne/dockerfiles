@@ -5,10 +5,10 @@
 FROM      ubuntu:14.04.2
 MAINTAINER Andrew Browne <brownie@brownie.com.au>
 
-ENV ES_VERSION 3.3.1
+ENV ES_VERSION 3.4.0
 
-ADD http://download.geteventstore.com/binaries/EventStore-OSS-Ubuntu-v$ES_VERSION.tar.gz /tmp/
-RUN tar xfz /tmp/EventStore-OSS-Ubuntu-v$ES_VERSION.tar.gz -C /opt
+ADD http://download.geteventstore.com/binaries/EventStore-OSS-Ubuntu-14.04-v$ES_VERSION.tar.gz /tmp/
+RUN tar xfz /tmp/EventStore-OSS-Ubuntu-14.04-v$ES_VERSION.tar.gz -C /opt
 
 EXPOSE 2113
 EXPOSE 1113
